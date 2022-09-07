@@ -1,0 +1,104 @@
+.title-popup{
+	    font-size: 18px;
+    padding: 19px;
+}
+.wrapper-tb-pop{
+	table{
+		thead{
+			background: #f7f7f7;
+			tr{
+				th{
+					font-size: 12px;
+					text-transform: uppercase;
+					padding: 10px 20px;
+					border-right: 1px solid #fff;
+					&:last-child{
+						border-right: none;
+					}
+				}
+			}
+		}
+		tbody{
+			tr{
+				border-bottom: 1px dotted #ccc;
+				&:last-child{
+					border-bottom: none;
+				}
+				td{
+					padding: 17px 18px;
+					.media-heading{
+						margin-bottom: 17px;
+						a{
+							font-size: 13px;
+							line-height: 18px;
+						}
+					}
+					.del-pro-link{
+						i{
+							margin-right: 5px;
+						}
+						span{
+							color: #007ff0;
+							font-size: 12px;
+						}
+					}
+					.select-box{
+						width: 50%;
+					    margin: 0 auto;
+					    input[type="text"]{
+					    	width: 100%;
+					    }
+					}
+				}
+				.td-price{
+					.old_price {
+						    text-decoration: line-through;
+					}
+				}
+			}
+		}
+	}
+	.ft-popup-cart{
+		background: #f2f3f5;
+		padding: 20px;
+		.price-ajax{
+			margin-bottom: 15px;
+			.txt-total-pop{
+				margin-bottom: 8px;
+				color: #333;
+				font-size: 14px;
+				.total-pop{
+					font-size: 16px;
+					color: #ce0021;
+				}
+			}
+			p{
+				font-size: 12px;
+				color: #999999;
+			}
+		}
+		.sub-wrapper-popup{
+			position: relative;
+			.view-cart{
+				color: #007ff0;
+				position: absolute;
+				bottom: 0;
+				font-size: 14px;
+				i{
+					font-size: 16px;
+					vertical-align: middle;
+					margin-right: 7px;
+				}
+			}
+			.continue-buy{
+				background: #ce0021;
+				border-radius: 5px;
+				font-size: 16px;
+				padding: 14px 30px;
+				display: inline-block;
+				color: #fff;
+			}
+		}
+		
+	}
+}

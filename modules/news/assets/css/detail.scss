@@ -1,0 +1,116 @@
+.banner-list {
+    position: relative;
+    margin-left: -30px;
+    @media (max-width: 768px){
+        margin-left: unset;
+    }
+}
+.news_detail {
+    #DivIdToPrint{
+        margin-bottom: 25px;
+    }
+    iframe,img{
+        max-width: 100% !important;
+        height: auto !important;
+    }
+    .news-title {
+        font-size: 20px;
+        margin-top: 40px;
+        text-transform: inherit;
+        margin-bottom: 20px;
+        color: var(--color-all);
+        font-weight: bold;
+        @media (max-width: 768px){
+            margin-top: 20px;
+        }
+    }
+
+    .time {
+        font-size: 13px;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        color: #999999;
+        font-weight: 400;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #ddd;
+        border-top: 1px solid #ddd;
+        p{
+            margin: 0;
+        }
+        .social-share-new{
+            display: flex;
+            margin-left: 40px;
+            color: #000;
+            align-items: center;
+            justify-content: center;
+            i{
+                margin-right: 5px;
+            }
+            .share_bottom{
+                margin-left: 5px;
+            }
+        }
+    }
+    .contents-summary{
+        margin-bottom: 15px;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 25px;
+      }
+
+    .description {
+        margin-bottom: 30px;
+        font-size: 14px;
+        line-height: 25px;
+        img {
+            max-width: 100% !important;
+            height: auto !important;
+        }
+        p{
+            margin-bottom: 14px;
+        }
+    }
+
+
+
+    .title-module-related {
+        margin-bottom: 15px;
+        span {
+            font-size: 18px;
+            font-weight: bold;
+        }
+    }
+.new-related{
+    .image-check{
+        margin-bottom: 30px;
+        .info-block-new{
+            .title-product{
+                margin: 15px 0 5px;
+                font-size: 14px;
+                text-align: center;
+                min-height: 43px;
+                line-height: 20px;
+                max-height: 43px;
+                overflow: hidden;
+            }
+        }
+        .image-info-plus{
+            position: relative;
+            img{
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+
+}
+

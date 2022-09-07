@@ -1,0 +1,121 @@
+/*form dang ky and dang nhap*/
+.text-center{
+	text-align: center;
+}
+a#close-cart {
+    float: right;
+    margin-top: -18px;
+    margin-right: -18px;
+}
+.form-sing-out,.form-sing-in{
+    padding: 2px;
+    border-radius: 5px;
+}
+.form-sing-out h3 ,.form-sing-in h3{
+    font-size: 18px;
+    margin: 0;
+    padding: 15px;
+    color: #fff;
+    font-weight: normal;
+    border-radius: 5px 5px 0 0;
+    background: #ce0021;
+}
+
+.form-sing-out .form-list_inp ,.form-sing-in .form-list_inp{
+    padding: 30px 45px;
+}
+
+
+.form-sing-out input[type="text"], .form-sing-out input[type="email"],.form-sing-out input[type="password"], .form-sing-in input[type="text"], .form-sing-in input[type="email"] ,.form-sing-in input[type="password"]{
+    width: 100%;
+    font-size: 13px;
+    color: #777777;
+    border: none;
+    background: #f1f1f1;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+input[type="submit"]{
+	border: none;
+}
+.submit_dk{
+	border: none;
+    display: block;
+    text-transform: uppercase;
+    background: #cf0202;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    color: #fff;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.submit_dk:hover{
+    color: #fff;
+}
+.checkbox-dk{
+    margin: 20px 0;
+}
+.checkbox-dk span{
+    font-size: 13px;
+    font-weight: normal;
+}
+.checkbox-dk span a{
+    color: #0083c4;
+}
+
+.agant-login{
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.agant-login a{
+    color: #0083c4;
+}
+.mrrgin-chose{
+	float: right;
+}
+.mrrgin-chose a{
+   color: #0083c4;
+}
+.login-order{
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.login-order span:before, .login-order span:after{
+    content: '';
+    width: 100px;
+    border: 1px solid #dddddd;
+    display: inline-block;
+    vertical-align: 3px;
+}
+.login-order span:before{
+    margin-right: 10px;
+}
+.login-order span:after{
+    margin-left: 10px;
+}
+.login-using-sosial{
+	margin-bottom: 10px;
+}
+.login-using-sosial a{
+    display: inline-block;
+    width: 180px;
+    height: 36px;
+    margin-right: 10px;
+}
+.login-using-sosial a:nth-child(1){
+    background: url(../images/sosialnetwec_01.png) no-repeat center;
+}
+.login-using-sosial a:nth-child(2){
+    background: url(../images/sosialnetwec_03.png) no-repeat center;
+}
+
+.form-sing-out .code-view {
+    background: url(../images/change_captcha.png) no-repeat scroll center center;
+    display: inline-block;
+    padding: 8px 12px;
+}
+
+/*end dk and dang nhap*/

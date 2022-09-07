@@ -1,0 +1,87 @@
+.banner-list {
+  position: relative;
+  margin-left: -30px;
+  @media (max-width: 768px){
+    margin-left: unset;
+  }
+}
+.new-contents{
+  margin-top: 30px;
+}
+.item-new {
+  display: block;
+  a {
+    position: relative;
+    display: block;
+    img {
+      margin: 0 auto;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  .content-item {
+    .title {
+      a {
+        margin: 15px 0;
+        font-size: 14px;
+        text-align: center;
+        font-weight: normal;
+        min-height: 45px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+.new-contents{
+  .title-module{
+    margin-top: 40px;
+    background: url(../images/viec-lam.png) #F8F8F8 no-repeat left center;
+    margin-bottom: 20px;
+    padding: 17px 0 17px 50px;
+    span{
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+  .list-news{
+    .show-list-new{
+      margin-bottom: 40px;
+      a{
+        background: #004C99;
+        display: inline-block;
+        padding: 10px 20px;
+        color: #fff;
+        font-size: 16px;
+      }
+    }
+      .image-info{
+        border-bottom: 1px solid #EEEEEE;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        @media (max-width: 768px){
+          text-align: center;
+        }
+        img{
+          margin: 0 auto;
+        }
+        .title-product{
+          font-weight: bold;
+          margin-bottom: 2px;
+          font-size: 16px;
+        }
+        .time-rec{
+          color: #333333;
+          margin-bottom: 5px;
+        }
+        summary{
+          max-height: 160px;
+          overflow: hidden;
+          display: -webkit-box;
+          //-webkit-line-clamp: 2;
+          color: #0c0c0c;
+          -webkit-box-orient: vertical;
+          line-height: 20px;
+        }
+      }
+  }
+}

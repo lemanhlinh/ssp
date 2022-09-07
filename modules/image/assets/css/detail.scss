@@ -1,0 +1,115 @@
+.banner-list {
+  position: relative;
+  margin-left: -30px;
+  @media (max-width: 768px){
+    margin-left: unset;
+  }
+}
+.contents-image{
+  margin-bottom: 40px;
+  .list_image{
+    img{
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  .slick-next{
+    background: url(../images/slider_03.png) no-repeat center;
+    width: 40px;
+    height: 40px;
+    right: 25px;
+    z-index: 1;
+    background-size: contain;
+    &:before{
+      content: '';
+    }
+    &:hover{
+      background: url(../images/slider_10.png) no-repeat center;
+      background-size: contain;
+      width: 40px;
+      height: 40px;
+      right: 25px;
+    }
+  }
+  .slick-prev{
+    background: url(../images/slider_06.png) no-repeat center;
+    width: 40px;
+    height: 40px;
+    left: 25px;
+    z-index: 1;
+    background-size: contain;
+    &:before{
+      content: '';
+    }
+    &:hover{
+      background: url(../images/slider_12.png) no-repeat center;
+      background-size: contain;
+      width: 40px;
+      z-index: 1;
+      height: 40px;
+      left: 25px;
+    }
+  }
+}
+.contents_detail{
+  .title-module{
+    //padding-bottom: 7px;
+    //border-bottom: 1px solid #e9ebee;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    @media (max-width: 768px){
+      margin-top: 30px;
+    }
+    span{
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+  .contents-summary{
+    padding: 0 20px;
+    font-weight: bold;
+    display: none;
+  }
+  .contents-description{
+    margin-bottom: 30px;
+    img{
+      max-width: 100% !important;
+      height: auto !important;
+    }
+    p{
+      margin-bottom: 20px;
+    }
+    table{
+      text-align: center !important;
+      width: 100% !important;
+      thead{
+        background: #EEEEEE;
+        tr{
+          th{
+            text-align: center !important;
+          }
+        }
+      }
+    }
+  }
+  #css_menu_content{
+    ul{
+      li{
+        a{
+          display: flex;
+          justify-content: space-between;
+          padding: 10px 15px;
+          background: white;
+          align-items: center;
+          border-bottom: 1px solid #f6f6f6;
+        }
+        &.active, &:hover{
+          a{
+            background: var(--color-all);
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

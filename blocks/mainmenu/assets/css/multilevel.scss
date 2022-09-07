@@ -1,0 +1,101 @@
+.navbar-nav > li:hover > .darkHeader{
+   display: none;
+}
+.list-item-menu{
+    position: relative;
+}
+.mainmenu-main_activities {
+    background: var(--color-all);
+    display: flex;
+    > ul {
+        float: right;
+        > li {
+            > a {
+                display: block;
+                margin: 0 auto;
+                position: relative;
+                font-size: 16px;
+                line-height: 20px;
+                border-right: 1px solid #fff;
+                color: #fff;
+                padding: 15px 25px;
+                &:hover, &:focus {
+                    background: none;
+                }
+                img{
+                    display: block;
+                    margin: 0 auto;
+                    margin-bottom: 14px;
+                }
+            }
+            &.activated{
+                //background: url("../images/iconmenu.png") no-repeat center bottom;
+                a{
+                    color:  #9fdeff;
+                }
+
+            }
+            &:last-child{
+                >a{
+                    border-right: none;
+                }
+            }
+            &:hover {
+                //background: url("../images/iconmenu.png") no-repeat center bottom;
+                a{
+                    color:  #9fdeff;
+                }
+                >.dropdown-menu {
+                    background: #fff;
+                    border: none;
+                    text-align: center;
+                    padding: 0;
+                    min-width: 190px;
+                    li {
+                        display: block;
+                        a {
+                            color: #000;
+                            text-transform: capitalize;
+                            font-size: 14px;
+                            font-weight: normal;
+                            display: block;
+                            margin: 0;
+                            text-align: left;
+                            padding: 12px 20px;
+                            &:hover{
+                                background-color: #f6f6f6;
+                                color: var(--color-all);
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+        li{
+            position: relative;
+            &:hover {
+                >* {
+                    display: block;
+                }
+            }
+        }
+        ul{
+            ul{
+                position: absolute;
+                left: 100%;
+                top: 0;
+                padding: 0;
+                margin: 0;
+                border: none;
+            }
+        }
+    }
+}
+
+.popup-box-on {
+     display: block !important;
+ }
+.off {
+    display: none;
+}

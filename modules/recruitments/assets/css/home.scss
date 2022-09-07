@@ -1,0 +1,100 @@
+.banner-list {
+  position: relative;
+  margin-left: -30px;
+  @media (max-width: 768px){
+    margin-left: unset;
+  }
+}
+.item-new {
+  display: block;
+  a {
+    position: relative;
+    display: block;
+    img {
+      margin: 0 auto;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  .content-item {
+    .title {
+      a {
+        margin: 15px 0;
+        font-size: 14px;
+        text-align: center;
+        font-weight: normal;
+        min-height: 45px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+.new-contents{
+  .title-module{
+    padding-bottom: 7px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    span{
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+  .list-news{
+    .show-list-new{
+      margin-bottom: 40px;
+      a{
+        background: #004C99;
+        display: inline-block;
+        padding: 10px 20px;
+        color: #fff;
+        font-size: 16px;
+      }
+    }
+    .image-info-service{
+      background: #eeeeee;
+      padding: 20px;
+      margin-bottom: 30px;
+      .title-product{
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: var(--color-all);
+        font-size: 14px;
+        @media (max-width: 768px){
+          margin-top: 30px;
+        }
+        span{
+          background: #f7941d;
+          font-size: 10px;
+          margin: 0;
+          display: inline-block;
+          padding: 3px 8px;
+          position: relative;
+          color: #fff;
+          &:before{
+            content: url("../images/news-icon.png");
+            width: 7px;
+            height: 4px;
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+          }
+        }
+      }
+      .time-rec{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      summary{
+        max-height: 43px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        color: #0c0c0c;
+        -webkit-box-orient: vertical;
+        line-height: 20px;
+      }
+    }
+  }
+}

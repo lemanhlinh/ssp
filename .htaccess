@@ -1,0 +1,145 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^www\.(.*)
+RewriteRule (.*) http://%1/$1 [R=301,L]
+
+
+AddType text/x-component .htc
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+
+#RewriteCond %{REQUEST_URI} !^/index.php
+#RewriteCond %{REQUEST_URI} (/|\.php|\.html|\.htm|\.feed|\.pdf|\.raw|/[^.]*)$  [NC]
+#RewriteRule (.*) index.php
+
+RewriteRule ^(index.php|index.html)$ index.php?module=home&view=home&Itemid=1&lang=vi[L]
+RewriteRule ^&tmpl=1$ index.php?module=home&view=home&Itemid=1&lang=vi[L]
+RewriteRule ^$ index.php?module=home&view=home&Itemid=1&lang=vi [L]
+
+RewriteRule ^$ index.php?&lang=vi [L]
+RewriteRule ^en$ index.php?module=home&view=home&Itemid=1&lang=en [L]
+RewriteRule ^jp$ index.php?module=home&view=home&Itemid=1&lang=jp [L]
+
+
+#-----------------------------new----------------------------------------------------------------------------------------------
+RewriteRule ^([^/]*)-cn([0-9]*)(-page([0-9]*)).html$ index.php?module=news&view=cat&ccode=$1&cid=$2&Itemid=3&page=$4&lang=vi [L]
+RewriteRule ^([^/]*)-cn([0-9]*).html$ index.php?module=news&view=cat&ccode=$1&cid=$2&Itemid=3&lang=vi [L]
+RewriteRule ^([^/]*)-cne([0-9]*)(-page([0-9]*)).html$ index.php?module=news&view=cat&ccode=$1&id=$2&Itemid=3&page=$4&lang=en [L]
+RewriteRule ^([^/]*)-cne([0-9]*).html$ index.php?module=news&view=cat&ccode=$1&id=$2&Itemid=3&lang=en [L]
+RewriteRule ^([^/]*)-cnj([0-9]*)(-page([0-9]*)).html$ index.php?module=news&view=cat&ccode=$1&id=$2&Itemid=3&page=$4&lang=jp [L]
+RewriteRule ^([^/]*)-cnj([0-9]*).html$ index.php?module=news&view=cat&ccode=$1&id=$2&Itemid=3&lang=jp [L]
+
+RewriteRule ^([^/]*)-n([0-9]*).html$ index.php?module=news&view=news&code=$1&id=$2&Itemid=4&lang=vi [L]
+RewriteRule ^([^/]*)-ne([0-9]*).html$ index.php?module=news&view=news&code=$1&id=$2&Itemid=4&lang=en [L]
+RewriteRule ^([^/]*)-nj([0-9]*).html$ index.php?module=news&view=news&code=$1&id=$2&Itemid=4&lang=jp [L]
+
+RewriteRule ^tin-tuc(-page([0-9]*)).html$ index.php?module=news&view=home&Itemid=2&page=$2&lang=vi [L]
+RewriteRule ^tin-tuc.html$ index.php?module=news&view=home&Itemid=2&lang=vi [L]
+
+RewriteRule ^news(-page([0-9]*)).html$ index.php?module=news&view=home&ccode=$1&Itemid=2&page=$2&lang=en [L]
+RewriteRule ^news.html$ index.php?module=news&view=home&Itemid=2&lang=en [L]
+
+RewriteRule ^news-japan(-page([0-9]*)).html$ index.php?module=news&view=home&ccode=$1&Itemid=2&page=$2&lang=jp [L]
+RewriteRule ^news-japan.html$ index.php?module=news&view=home&Itemid=2&lang=jp [L]
+
+#RewriteRule ^tim-kiem-tin-tuc/([^/]*)(-page([0-9]*)).html$ index.php?module=news&view=search&keyword=$1&page=$2&Itemid=3&lang=vi [L]
+#RewriteRule ^tim-kiem-tin-tuc/([^/]*).html$ index.php?module=news&view=search&keyword=$1&Itemid=3&lang=vi [L]
+#RewriteRule ^search-news/([^/]*).html$ index.php?module=news&view=search&keyword=$1&Itemid=3&lang=en [L]
+
+#-----------------------contents -----------------------------------------------------------------------------------------
+#RewriteRule ^([^/]*)-cc([0-9]*)(-page([0-9]*)).html$ index.php?module=contents&view=cat&ccode=$1&id=$2&page=$4&Itemid=8&lang=vi [L]
+#RewriteRule ^([^/]*)-cc([0-9]*).html$ index.php?module=contents&view=cat&ccode=$1&id=$2&Itemid=8&lang=vi  [L]
+RewriteRule ^([^/]*)/([^/]*)-c([0-9]*).html$ index.php?module=contents&view=content&ccode=$1&code=$2&id=$3&Itemid=8&lang=vi  [L]
+RewriteRule ^([^/]*)/([^/]*)-ce([0-9]*).html$ index.php?module=contents&view=content&ccode=$1&code=$2&id=$3&Itemid=8&lang=en  [L]
+RewriteRule ^([^/]*)/([^/]*)-cj([0-9]*).html$ index.php?module=contents&view=content&ccode=$1&code=$2&id=$3&Itemid=8&lang=jp  [L]
+#RewriteRule ^doi-tac.html$ index.php?module=contents&view=partners&Itemid=8&lang=vi  [L]
+#RewriteRule ^partners.html$ index.php?module=contents&view=partners&Itemid=8&lang=en  [L]
+
+#--------------------contact --------------------------------------------------------------------------------------
+RewriteRule ^lien-he.html$ index.php?module=contact&Itemid=5&lang=vi [L]
+RewriteRule ^contact.html$ index.php?module=contact&Itemid=5&lang=en [L]
+RewriteRule ^contact-japan.html$ index.php?module=contact&Itemid=5&lang=jp [L]
+
+#--------------------employees --------------------------------------------------------------------------------------
+RewriteRule ^viec-lam.html$ index.php?module=employees&view=home&Itemid=5&lang=vi [L]
+RewriteRule ^job.html$ index.php?module=employees&view=home&Itemid=5&lang=en [L]
+RewriteRule ^job-japan.html$ index.php?module=employees&view=home&Itemid=5&lang=jp [L]
+RewriteRule ^thanh-vien.html$ index.php?module=employees&view=home2&Itemid=5&lang=vi [L]
+RewriteRule ^employees.html$ index.php?module=employees&view=home2&Itemid=5&lang=en [L]
+RewriteRule ^employees-japan.html$ index.php?module=employees&view=home2&Itemid=5&lang=jp [L]
+
+#--------------------image --------------------------------------------------------------------------------------
+RewriteRule ^nang-luc/([^/]*)-i([0-9]*).html$ index.php?module=image&view=image&code=$1&id=$2&Itemid=21&lang=vi  [L]
+RewriteRule ^capacity/([^/]*)-in([0-9]*).html$ index.php?module=image&view=image&code=$1&id=$2&Itemid=21&lang=en  [L]
+RewriteRule ^capacity-japan/([^/]*)-ij([0-9]*).html$ index.php?module=image&view=image&code=$1&id=$2&Itemid=21&lang=jp  [L]
+
+#product
+#RewriteRule ^san-pham(-page([0-9]*)).html(.*) index.php?module=products&view=home&page=$2&Itemid=16&lang=vi&%{QUERY_STRING}  [L]
+#RewriteRule ^products(-page([0-9]*)).html(.*) index.php?module=products&view=home&page=$2&Itemid=16&lang=en&%{QUERY_STRING}  [L]
+#RewriteRule ^products-japan(-page([0-9]*)).html(.*) index.php?module=products&view=home&page=$2&Itemid=16&lang=jp&%{QUERY_STRING}  [L]
+#RewriteRule ^san-pham.html(.*) index.php?module=products&view=home&Itemid=16&lang=vi&%{QUERY_STRING}  [L]
+#RewriteRule ^products.html(.*) index.php?module=products&view=home&Itemid=16&lang=en&%{QUERY_STRING}  [L]
+#RewriteRule ^products-japan.html(.*) index.php?module=products&view=home&Itemid=16&lang=jp&%{QUERY_STRING}  [L]
+#RewriteRule ^([^/]*)-pc([0-9]*)(-page([0-9]*)).html(.*) index.php?module=products&view=cat&ccode=$1&cid=$2&page=$4&Itemid=17&lang=vi&%{QUERY_STRING}  [L]
+#RewriteRule ^([^/]*)-pce([0-9]*)(-page([0-9]*)).html(.*) index.php?module=products&view=cat&ccode=$1&cid=$2&page=$4&Itemid=17&lang=en&%{QUERY_STRING}  [L]
+#RewriteRule ^([^/]*)-pcj([0-9]*)(-page([0-9]*)).html(.*) index.php?module=products&view=cat&ccode=$1&cid=$2&page=$4&Itemid=17&lang=jp&%{QUERY_STRING}  [L]
+#RewriteRule ^([^/]*)-pc([0-9]*).html(.*) index.php?module=products&view=cat&ccode=$1&cid=$2&Itemid=17&lang=vi&%{QUERY_STRING}  [L]
+#RewriteRule ^([^/]*)-pce([0-9]*).html(.*) index.php?module=products&view=cat&ccode=$1&cid=$2&Itemid=17&lang=en&%{QUERY_STRING}  [L]
+#RewriteRule ^([^/]*)-pcj([0-9]*).html(.*) index.php?module=products&view=cat&ccode=$1&cid=$2&Itemid=17&lang=jp&%{QUERY_STRING}  [L]
+
+
+#RewriteRule ^([^/]*)/([^/]*)-dp([0-9]*).html(.*) index.php?module=products&view=product&ccode=$1&code=$2&id=$3&Itemid=19&lang=vi&%{QUERY_STRING}  [L]
+#RewriteRule ^([^/]*)/([^/]*)-dpe([0-9]*).html(.*) index.php?module=products&view=product&ccode=$1&code=$2&id=$3&Itemid=19&lang=en&%{QUERY_STRING}  [L]
+
+RewriteRule ^tim-kiem/([^/]*)(-page([0-9]*)).html$ index.php?module=products&view=search&keyword=$1&page=$3&Itemid=17&lang=vi [L]
+RewriteRule ^search/([^/]*)(-page([0-9]*)).html$ index.php?module=products&view=search&keyword=$1&page=$3&Itemid=17&lang=en [L]
+RewriteRule ^search-japan/([^/]*)(-page([0-9]*)).html$ index.php?module=products&view=search&keyword=$1&page=$3&Itemid=17&lang=jp [L]
+RewriteRule ^tim-kiem/([^/]*).html$ index.php?module=products&view=search&keyword=$1&Itemid=17&lang=vi [L]
+RewriteRule ^search/([^/]*).html$ index.php?module=products&view=search&keyword=$1&Itemid=17&lang=en [L]
+RewriteRule ^search-japan/([^/]*).html$ index.php?module=products&view=search&keyword=$1&Itemid=17&lang=jp [L]
+
+#recruitments
+RewriteRule ^tuyen-dung(-page([0-9]*)).html$ index.php?module=recruitments&view=home&Itemid=20&page=$2&lang=vi [L]
+RewriteRule ^tuyen-dung.html$ index.php?module=recruitments&view=home&Itemid=20&lang=vi [L]
+RewriteRule ^danh-sach-tuyen-dung(-page([0-9]*)).html$ index.php?module=recruitments&view=home2&Itemid=20&page=$2&lang=vi [L]
+RewriteRule ^danh-sach-tuyen-dung.html$ index.php?module=recruitments&view=home2&Itemid=20&lang=vi [L]
+RewriteRule ^recruitments(-page([0-9]*)).html$ index.php?module=recruitments&view=home&Itemid=20&page=$2&lang=en [L]
+RewriteRule ^recruitments.html$ index.php?module=recruitments&view=home&Itemid=20&lang=en [L]
+RewriteRule ^list-recruitments(-page([0-9]*)).html$ index.php?module=recruitments&view=home2&Itemid=20&page=$2&lang=en [L]
+RewriteRule ^list-recruitments.html$ index.php?module=recruitments&view=home2&Itemid=20&lang=en [L]
+RewriteRule ^recruitments-japan(-page([0-9]*)).html$ index.php?module=recruitments&view=home&Itemid=20&page=$2&lang=jp [L]
+RewriteRule ^recruitments-japan.html$ index.php?module=recruitments&view=home&Itemid=20&lang=jp [L]
+RewriteRule ^list-recruitments-japan(-page([0-9]*)).html$ index.php?module=recruitments&view=home2&Itemid=20&page=$2&lang=jp [L]
+RewriteRule ^list-recruitments-japan.html$ index.php?module=recruitments&view=home2&Itemid=20&lang=jp [L]
+RewriteRule ^([^/]*)-hr([0-9]*).html$ index.php?module=recruitments&view=recruitments&code=$1&id=$2&Itemid=20&lang=vi  [L]
+RewriteRule ^([^/]*)-hre([0-9]*).html$ index.php?module=recruitments&view=recruitments&code=$1&id=$2&Itemid=20&lang=en  [L]
+RewriteRule ^([^/]*)-hrj([0-9]*).html$ index.php?module=recruitments&view=recruitments&code=$1&id=$2&Itemid=20&lang=jp  [L]
+RewriteRule ^nop-ho-so-od([0-9]*).html$ index.php?module=recruitments&view=order&id=$1&Itemid=20&lang=vi  [L]
+RewriteRule ^order-now-ode([0-9]*).html$ index.php?module=recruitments&view=order&id=$1&Itemid=20&lang=en  [L]
+RewriteRule ^order-now-japan-odj([0-9]*).html$ index.php?module=recruitments&view=order&id=$1&Itemid=20&lang=jp  [L]
+
+#------------------notfound ----------------------------------------------------------------------------------------------------
+ErrorDocument 404 /404-page.html
+RewriteRule ^404-page.html index.php?module=notfound&view=notfound&Itemid=1000 [L]
+
+#-------------------rss---------------------------------------------------------------------------------------------------------
+RewriteRule ^rss.xml$ rss.php [L]
+RewriteRule ^feeds$ rss.php [L]
+
+#----------------Configures the caching expiry date for browser caching of static files.
+<IfModule mod_expires.c>
+    <FilesMatch ".(jpg|jpeg|gif|png|mp3|flv|mov|avi|3pg|html|htm|swf|pdf|js|css|ico|mp4)$">
+        ExpiresActive on
+        ExpiresDefault "access plus 1 year"
+    </FilesMatch>
+</IfModule>
+
+<IfModule mod_deflate.c>
+
+<FilesMatch ".(js|css|html|htm|php|xml)$">
+SetOutputFilter DEFLATE
+</FilesMatch>
+
+</IfModule>

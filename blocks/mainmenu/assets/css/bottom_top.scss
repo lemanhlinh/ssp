@@ -1,0 +1,45 @@
+.box-menu-bt{
+  display: flex;
+}
+.menu-bottom-top{
+  background: #00923f;
+  .mainmenu-bt{
+    ul{
+      li{
+        a{
+          color: #fff;
+          display: block;
+          padding: 16px 15px;
+          &:hover{
+            background-color: #da251d;
+          }
+        }
+      }
+    }
+  }
+  .social-share-new{
+    background: #da251d;
+    position: relative;
+    &:before{
+      content: "";
+      position: absolute;
+      background: url(../images/cross-ft.png) no-repeat;
+      width: 40px;
+      height: 96px;
+      left: -17px;
+    }
+    ul{
+      li{
+        display: inline-block;
+        height: 48px;
+        a{
+          display: block;
+          img{
+            padding: 14px 15px;
+          }
+        }
+
+      }
+    }
+  }
+}

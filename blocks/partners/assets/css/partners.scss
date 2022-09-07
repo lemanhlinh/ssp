@@ -1,0 +1,38 @@
+.block-partners{
+	padding: 5px 0;
+	h3{
+		line-height: 90px;
+		font-size: 17px;
+		text-transform: uppercase;
+		display: inline-block;
+		img{
+			margin: 0 auto;
+			margin-bottom: 10px;
+		}
+	}
+	.slick-next{
+		width: 30px;
+		height: 30px;
+		right: 0;
+		&:before{
+			content: url("../images/partner_16.png") ;
+			border: 1px solid #777777;
+			display: block;
+			padding: 3px;
+			border-radius: 50%;
+		}
+	}
+	.slick-prev{
+		left: 0;
+		width: 30px;
+		height: 30px;
+		z-index: 1;
+		&:before {
+			content: url("../images/partner_13.png");
+			border: 1px solid #777777;
+			display: block;
+			padding: 3px;
+			border-radius: 50%;
+		}
+	}
+}

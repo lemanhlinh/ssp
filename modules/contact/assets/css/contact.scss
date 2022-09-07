@@ -1,0 +1,57 @@
+.banner-list {
+  position: relative;
+  margin-left: -30px;
+  @media (max-width: 768px){
+    margin-left: unset;
+  }
+}
+.contact-main{
+  padding-bottom: 30px;
+  .title-module{
+    padding-bottom: 7px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    @media (max-width: 768px){
+      margin-top: 30px;
+    }
+    span{
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+  .description_contact{
+    margin-bottom: 25px;
+  }
+    .wapper-content-page{
+      label{
+        margin-bottom: 5px;
+        font-weight: normal;
+      }
+        input[type="text"],input[type="email"]{
+          width: 100%;
+          border-radius: 2px;
+          height: 35px;
+          border: 1px solid #ccc;
+          padding: 14px;
+          margin-bottom: 19px;
+        }
+        textarea{
+            width: 100%; 
+            border-radius: 5px;
+            padding: 14px;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"]{
+          text-align: left;
+          color: #fff;
+          background: var(--color-all);
+          padding: 8px 23px;
+          border: none;
+          border-radius: 3px;
+          display: block;
+          /* margin: 0 auto; */
+          margin-top: 15px;
+          font-size: 16px;
+        }
+    }
+}

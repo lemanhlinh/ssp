@@ -1,0 +1,40 @@
+#myCarousel {
+  position: relative;
+  margin-left: -30px;
+  @media (max-width: 768px){
+    position: unset;
+    margin-left: unset;
+  }
+
+    .carousel-inner {
+      margin-bottom: 0;
+      img{
+        display: block;
+        margin: 0 auto;
+      }
+      .carousel-caption{
+        position: relative;
+        display: block;
+        h3{
+          position: absolute;
+          color: #fff;
+          bottom: 30px;
+          right: 20px;
+          text-align: right;
+          padding-right: 20px;
+        }
+      }
+        .slick-dots {
+            bottom: 16px;
+            li{
+            	background: url(../images/icon-slide_04.png) no-repeat;
+            	button{
+            		display: none;
+            	}
+            }
+            .slick-active{
+            	background: url(../images/icon-slide_01.png) no-repeat;
+            }
+        }
+    }
+}

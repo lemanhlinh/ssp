@@ -1,0 +1,56 @@
+.partners_detail{
+  .list-cats{
+    margin-bottom: 45px;
+    text-align: center;
+    ul{
+      li{
+        display: inline-block;
+        a{
+          display: block;
+          background-color: #00923f;
+          color: #fff;
+          padding: 10px 30px;
+          border-radius: 25px;
+          margin-right: 10px;
+          &.active{
+            background-color: #da251d;
+            position: relative;
+            &:after{
+              top: 100%;
+              left: 50%;
+              border: solid transparent;
+              content: " ";
+              height: 0;
+              width: 0;
+              position: absolute;
+              pointer-events: none;
+              border-color: rgba(136, 183, 213, 0);
+              border-top-color: #da251d;
+              border-width: 6px;
+              margin-left: -6px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .select_menu{
+    display: none ;
+  }
+  @media only screen and (max-width: 767px){
+    .list-cats{
+      ul{
+        display: none;
+      }
+    }
+    .select_menu{
+      display: block;
+    }
+  }
+  img{
+    display: block;
+    margin: 0 auto;
+    background: #ddd;
+    margin-bottom: 10px;
+  }
+}

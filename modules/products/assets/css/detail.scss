@@ -1,0 +1,158 @@
+.background-detail-product{
+    margin-bottom: 60px;
+    .all_info_product{
+        .image-table{
+            .img_styling{
+                display: flex;
+                border: 1px solid #eeeeee;
+                img{
+                    display: block;
+                    margin: 0 auto;
+                }
+                .thumb-pro{
+                    margin-right: 10px;
+                }
+                .main-img{
+                    a{
+                        display: block;
+                        img{
+                            margin: 0 auto;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .price_product_pc{
+        .border-detail_top{
+            .title-product{
+                color: #3e0000;
+                font-size: 30px;
+                margin-bottom: 30px;
+            }
+        }
+        .border-detail_bottom{
+            .summary-product{
+                margin-bottom: 20px;
+            }
+
+            .social-share-new{
+                display: flex;
+                color: #000;
+                align-items: center;
+                i{
+                    margin-right: 5px;
+                }
+                .share_bottom{
+                    margin-left: 5px;
+                }
+            }
+        }
+        .price-product{
+            font-size: 18px;
+            font-weight: bold;
+            color: #3e0000;
+        }
+    }
+}
+.tab-info-product{
+    margin-top: 30px;
+    iframe,img{
+        max-width: 100% !important;
+        height: auto !important;
+    }
+    .related_product{
+        .title-related{
+            border-bottom: 1px solid #eee;
+            margin-bottom: 35px;
+            span{
+                background: #fff;
+                font-size: 24px;
+                color: #3e0000;
+                display: inline-block;
+                margin-bottom: -12px;
+                padding-right: 25px;
+            }
+        }
+        .list_products{
+            .image-check {
+                .image-info-plus {
+                    text-align: center;
+                    margin-bottom: 52px;
+                    a{
+                        display: block;
+                        &:first-child{
+                            border: 1px solid #eeeeee;
+                        }
+                    }
+                    .title-product {
+                        font-weight: bold;
+                        margin-top: 20px;
+                        margin-bottom: 15px;
+                        overflow: hidden;
+                        height: 40px;
+                        font-size: 18px;
+                        color: #3e0000;
+                    }
+                    p{
+                        color: #3e0000;
+                        font-weight: bold;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.order-product{
+    .content-popup{
+        h3{
+            color: #333333;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 20px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        form{
+            input{
+                padding: 19px;
+                background: #eee;
+                border: none;
+            }
+            input[type="submit"]{
+                background: #da251d;
+                color: #fff;
+                display: block;
+                width: auto;
+                margin: 0 auto;
+                text-transform: uppercase;
+                padding: 5px 40px;
+                height: auto;
+            }
+        }
+    }
+    .shop_attributes{
+        width: 100%;
+        tbody{
+            tr{
+                &:nth-child(odd) {
+                    background: #eeeeee;
+                }
+                th{
+                    padding: 10px;
+                }
+                td{
+                    padding: 10px;
+                    p{
+                        line-height: 20px;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}

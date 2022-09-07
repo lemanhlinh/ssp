@@ -1,0 +1,43 @@
+.list_menu_new{
+    margin-bottom: 20px;
+    border-radius: 5px;
+    .title-left-menu{
+        padding: 20px 14px;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: bold;
+        background: #f06837;
+    }
+    .tab-content{
+        background-color: #f8f8f8;
+        li{
+            padding: 14px;
+            border-bottom: 1px solid #eeeeee;
+            a{
+                i{
+                    margin-right: 5px;
+                    font-size: 15px;
+                }
+            }
+        }
+
+    }
+    .tab-pane-list{
+        padding: 0 15px;
+            ul{
+                li{
+                    padding: 15px 0;
+                    border-bottom: 1px dotted #e5e5e5;
+                    img{
+                        width: 40%;
+                    }
+                    span{
+                        width: 50%;
+                        display: inline-block;
+                        float: right;
+                    }
+                }
+            }
+        }
+}
